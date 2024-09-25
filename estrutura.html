@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>gerenciamento de biblioteca</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            form {
+                margin-bottom: 20px;
+            }
+            .book {
+                border: 1px solid #ddd;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .remove-btn {
+                background-color: brown;
+                color:azure;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>gerenciamento de biblioteca</h1>
+
+        <form id="bookForm">
+            <label for="title">Título:</label><br>
+            <input type="text" id="author" name="author" required><br><br>
+
+            <label for="year">ano de publicação:</label><br>
+            <input type="number" id="year" name="year" required><br><br>
+
+            <label for="genre">gênero:</label><br>
+            <input type="text" id="genre" name="genre" required><br><br>
+
+            <button type="submit">adicionar livro</button>
+                </form>
+
+                <h2>lista de livros</h2>
+                <div id="bookList"></div>
+
+                <script src="app.js"></script>
+    </body>
+</html>
